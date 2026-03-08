@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import { ThemeSwitch } from "@/components/theme-switch";
 
 export default function Home() {
   return (
@@ -8,12 +9,13 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <span className="text-2xl font-bold">Sumanth Varma Dandu</span>
-            <div className="flex space-x-4 text-lg">
+            <div className="flex items-center space-x-4 text-lg">
               <a href="#about" className="hover:text-gray-400">About</a>
               <a href="#experience" className="hover:text-gray-400">Experience</a>
               <a href="#skills" className="hover:text-gray-400">Skills</a>
               <a href="#education" className="hover:text-gray-400">Education</a>
               <a href="#contact" className="hover:text-gray-400">Contact</a>
+              <ThemeSwitch />
             </div>
           </div>
         </div>
@@ -109,7 +111,7 @@ export default function Home() {
 
         <section id="contact" className="py-16 text-center bg-gray-50 dark:bg-gray-900">
           <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
-          <p className="text-lg mb-4">I'm currently open to new opportunities. Feel free to reach out!</p>
+          <p className="text-lg mb-4"> Feel free to reach out if you would like to discuss about Data Analytics & Engineering!</p>
           <div className="flex justify-center gap-8">
             <a href="mailto:dandusumanthvarma1909@gmail.com" className="bg-blue-500 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors">
               Email Me
